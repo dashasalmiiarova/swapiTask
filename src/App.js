@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/characters" component={ CharacterList }></Route>
           <Route path="/favorites" component={ Favorites }></Route>
           <Route path='/character/:name' component={CharacterPage} />
-          <Route component={ NotFound }></Route>
+          <Route path="*" component={ NotFound }></Route>
       </Switch>
     </div>
   );
